@@ -1,0 +1,86 @@
+[1613735557.596][INFO]: Starting MSEdgeDriver 88.0.705.63 (8c4f595b655cf82fd16941bc7908f00d82a87f4a) on port 3716
+[1613735557.596][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+[1613735560.397][INFO]: [270f06aa89cbe5ce7d07d5fd349d816e] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "MicrosoftEdge",
+         "ms:edgeOptions": {
+            "args": [ "disable-notifications", "Start-maximized", "ignore-certificate-error" ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "MicrosoftEdge",
+      "ms:edgeOptions": {
+         "args": [ "disable-notifications", "Start-maximized", "ignore-certificate-error" ],
+         "extensions": [  ]
+      }
+   }
+}
+[1613735560.452][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1613735560.474][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1613735560.527][INFO]: Launching msedge: "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --start-maximized --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-notifications --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-error --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\Mallika\AppData\Local\Temp\scoped_dir11152_491979745" data:,
+[1613735629.202][INFO]: Failed to connect to MSEdge. Attempting to kill it.
+[1613735629.792][INFO]: [270f06aa89cbe5ce7d07d5fd349d816e] RESPONSE InitSession ERROR chrome not reachable

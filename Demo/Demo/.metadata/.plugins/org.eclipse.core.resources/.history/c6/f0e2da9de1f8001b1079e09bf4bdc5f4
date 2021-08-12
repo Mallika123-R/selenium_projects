@@ -1,0 +1,21 @@
+package com.stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class BaseClass {
+	
+	
+public static WebDriver driver;
+public static WebDriver launchBrowser() {
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\Premc\\OneDrive\\Desktop\\Demo\\demo\\src\\test\\resources\\chromedriver.exe");
+	ChromeOptions options = new ChromeOptions().setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
+	 driver = new ChromeDriver(options);
+	return driver;	
+
+}
+	
+	
+}
+

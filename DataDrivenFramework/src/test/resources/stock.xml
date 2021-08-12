@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Stock Mnanagement">
+ <listeners>
+     <listener class-name="Listeners.Test_listener">
+     </listener>
+    </listeners>
+  <test name="Add New Stock Test">
+  <parameter name="action" value="addStock"/>
+    <classes>
+       <class name="testcase.radiff.session">
+        <methods>
+           <include name="dologin"/>
+        </methods>
+        </class>
+   
+      <class name="testcase.radiff.portfolio_mgmt">
+          <methods>
+           <include name="select_portfolio"/>
+         </methods>
+      </class>
+      
+     <class name="testcase.radiff.Stock_mgmt">
+       <methods>
+          <!--  <include name="add_FreshStock"/>-->
+           <include name="verify_stockPresent"/>
+          <include name="verifyStock_quantity"/>
+         <include name="verifyTransactionHistory"/>
+       </methods>
+        </class>
+  </classes>
+  </test> 
+   
+  
+   <!--  <test name="ModifyStock Test">
+  <parameter name="action" value="sellsStock"/>
+    <classes>
+      <class name="testcase.radiff.Stock_mgmt">
+       <methods>
+          
+          <include name="verify_stockPresent"/>
+          <include name="Modify_stock"/>
+          <include name="verify_stockPresent"/>
+          <include name="verifyStock_quantity"/>
+          <include name="verifyTransactionHistory"/>
+       </methods>
+        </class>
+  
+    </classes>
+  </test>
+  
+ <test name="Modify Stock Test">
+  <parameter name="action" value="addStock"/>
+   <classes>
+      <class name="testcase.rediff.portfolio_mgmt">
+         <methods>
+           <include name="select_portfolio"/>
+         </methods>
+      </class>
+      <class name="testcase.radiff.Stock_mgmt">
+
+       <methods>
+          
+          <include name="verify_stockPresent"/>
+          <include name="Modify_stock"/>
+          <include name="verify_stockPresent"/>
+          <include name="verifyStock_quantity"/>
+          <include name="verifyTransactionHistory"/>
+       </methods>
+        </class>
+        </classes>
+  </test> -->
+  <!-- Test -->
+</suite> <!-- Suite -->

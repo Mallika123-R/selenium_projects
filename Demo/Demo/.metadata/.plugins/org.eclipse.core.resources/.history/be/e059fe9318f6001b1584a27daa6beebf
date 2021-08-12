@@ -1,0 +1,9 @@
+package com.stepDefinition;
+
+public enum Status {
+	
+	PASSED,
+	FAILED,
+	UNUSED
+
+}

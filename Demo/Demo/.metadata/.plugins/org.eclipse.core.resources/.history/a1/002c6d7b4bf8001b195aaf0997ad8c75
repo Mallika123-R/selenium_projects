@@ -1,0 +1,46 @@
+package com.Reports;
+
+import java.io.File;
+import java.io.IOException;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import cucumber.api.Scenario;
+
+public class CustomExtentReporter {
+
+	private ExtentHtmlReporter extentHtmlReporter;
+	private ExtentReports extentReports;
+
+	public CustomExtentReporter(String reportlocation) {
+
+		extentHtmlReporter = new ExtentHtmlReporter(new File(reportlocation));
+		extentReports = new ExtentReports();
+		extentReports.attachReporter(extentHtmlReporter);
+
+	}
+
+	private void createTest(Scenario scenario, String screenShotFile) throws IOException {
+		if (scenario != null) {
+			String testName = getScenarioTitle(scenario);
+
+			if (scenario.getStatus().equalsIgnoreCase("PASSED")) {
+				
+				extentReports.createTest(testName).pass("Passed");
+
+			} else if (scenario.getStatus().equalsIgnoreCase("FAILED")) {
+                 extentReports.createTest(testName).fail("Failed").addScreenCaptureFromPath(screenShotFile);
+			} else {
+				// else
+			}
+		}
+
+	}
+
+	public String getScenarioTitle(Scenario scenario) {
+		return.scenario.getName().replaceAll(" ", "");
+
+	}
+	
+}

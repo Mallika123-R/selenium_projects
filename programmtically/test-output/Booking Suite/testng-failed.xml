@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Booking Suite]">
+  <test thread-count="5" name="Create booking Test-Apply discount-pay@Hotel(failed)">
+    <parameter name="action" value="pay@Hotel"/>
+    <classes>
+      <class name="testcases.Payment_Info">
+        <methods>
+          <include name="makepayment"/>
+        </methods>
+      </class> <!-- testcases.Payment_Info -->
+    </classes>
+  </test> <!-- Create booking Test-Apply discount-pay@Hotel(failed) -->
+  <test thread-count="5" name="Create booking Test-Apply discount-Instant Payment(failed)">
+    <parameter name="action" value="InstantPay"/>
+    <classes>
+      <class name="testcases.Payment_Info">
+        <methods>
+          <include name="makepayment"/>
+        </methods>
+      </class> <!-- testcases.Payment_Info -->
+    </classes>
+  </test> <!-- Create booking Test-Apply discount-Instant Payment(failed) -->
+</suite> <!-- Failed suite [Booking Suite] -->

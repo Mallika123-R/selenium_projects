@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite C]">
+  <parameter name="backgroundgroup1" value="chrome"/>
+  <test thread-count="5" name="Test C(failed)">
+    <classes>
+      <class name="suitec.TestC">
+        <methods>
+          <include name="testC"/>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- suitec.TestC -->
+    </classes>
+  </test> <!-- Test C(failed) -->
+</suite> <!-- Failed suite [Suite C] -->

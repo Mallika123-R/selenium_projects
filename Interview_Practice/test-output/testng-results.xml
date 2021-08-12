@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="90" started-at="2021-05-21T02:37:22Z" finished-at="2021-05-21T02:37:22Z">
+    <groups>
+      <group name="IT_department">
+        <method signature="basic_testNG.thirdTest()[pri:0, instance:com.Interview_Practice.basic_testNG@5cb9f472]" name="thirdTest" class="com.Interview_Practice.basic_testNG"/>
+      </group> <!-- IT_department -->
+      <group name="HR_department">
+        <method signature="basic_testNG.fifthTest()[pri:0, instance:com.Interview_Practice.basic_testNG@5cb9f472]" name="fifthTest" class="com.Interview_Practice.basic_testNG"/>
+        <method signature="basic_testNG.secondTest()[pri:0, instance:com.Interview_Practice.basic_testNG@5cb9f472]" name="secondTest" class="com.Interview_Practice.basic_testNG"/>
+      </group> <!-- HR_department -->
+    </groups>
+    <test name="Test" duration-ms="90" started-at="2021-05-21T02:37:22Z" finished-at="2021-05-21T02:37:22Z">
+      <class name="com.Interview_Practice.basic_testNG">
+        <test-method status="PASS" signature="firstTest(java.lang.String)[pri:0, instance:com.Interview_Practice.basic_testNG@5cb9f472]" name="firstTest" duration-ms="13" started-at="2021-05-21T02:37:22Z" finished-at="2021-05-21T02:37:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+        <test-method status="PASS" signature="secondTest()[pri:0, instance:com.Interview_Practice.basic_testNG@5cb9f472]" name="secondTest" duration-ms="2" started-at="2021-05-21T02:37:22Z" finished-at="2021-05-21T02:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method status="PASS" signature="thirdTest()[pri:0, instance:com.Interview_Practice.basic_testNG@5cb9f472]" name="thirdTest" duration-ms="2" started-at="2021-05-21T02:37:22Z" finished-at="2021-05-21T02:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+        <test-method status="PASS" signature="fifthTest()[pri:0, instance:com.Interview_Practice.basic_testNG@5cb9f472]" name="fifthTest" duration-ms="1" started-at="2021-05-21T02:37:22Z" finished-at="2021-05-21T02:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifthTest -->
+      </class> <!-- com.Interview_Practice.basic_testNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

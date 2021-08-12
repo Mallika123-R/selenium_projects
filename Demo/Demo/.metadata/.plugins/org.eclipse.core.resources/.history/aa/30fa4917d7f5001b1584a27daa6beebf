@@ -1,0 +1,40 @@
+package com.stepDefinition;
+import org.openqa.selenium.By;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginPage extends BaseClass {
+	
+@Given("User launch the Browser and the URL")
+public void user_launch_the_browser_and_the_url() {
+	BaseClass.launchBrowser();
+	driver.get("https://www.facebook.com/");
+	driver.manage().window().maximize();
+}
+
+@Given("User Enter the user name")
+public void user_enter_the_user_name() {
+	driver.findElement(By.id("email")).sendKeys("9600349993");
+   //driver.findElement((By) FileReaderManager.getInstance().getConfigReader().UserName).sendKeys("9600349993");
+}
+@When("User Enter the password")
+public void user_enter_the_password() {
+   
+   driver.findElement((By) FileReaderManager.getInstance().getConfigReader().Password).sendKeys("Dummy"); 
+}
+@When("User click the login button")
+public void user_click_the_login_button() {
+   driver.findElement((By) FileReaderManager.getInstance().getConfigReader().LoginButton).click();
+    
+}
+@Then("User displayed with Error Message")
+public void user_displayed_with_error_message() {
+   
+    
+}
+
+
+
+
+}

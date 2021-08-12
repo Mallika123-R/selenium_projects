@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.951">
+    <testcase classname="Facebook Home Page" name="Verify user can able to login FB with Invalid Login" time="9.608">
+        <system-out><![CDATA[Given User launch the Browser and the URL...................................passed
+And User Enter the user name................................................passed
+When User Enter the password................................................passed
+And User click the login button.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

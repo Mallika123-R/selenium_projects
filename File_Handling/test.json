@@ -1,0 +1,58 @@
+{
+  "TestName": [
+    {
+      "Studentdetails": [
+        {
+          "DOB": "12 OCT 1993",
+          "name": "Mallika",
+          "Place": "Patiala"
+        },
+        {
+          "DOB": "23 Feb 1992",
+          "name": "Rahil",
+          "Place": "Jalandhar"
+        }
+      ]
+    },
+    {
+      "Family": [
+        {
+          "name": "Gian Chand",
+          "Place": "Patiala"
+        },
+        {
+          "name": "Navneet",
+          "Place": "Jalandhar"
+        }
+      ]
+    }
+  ],
+  "TestName1": [
+    {
+      "Studentinfo": [
+        {
+          "DOB": "12 OCT 1993",
+          "name": "Mallika",
+          "Place": "Patiala"
+        },
+        {
+          "DOB": "23 Feb 1992",
+          "name": "Rahil",
+          "Place": "Jalandhar"
+        }
+      ]
+    },
+    {
+      "Family": [
+        {
+          "name": "Gian Chand",
+          "Place": "Patiala"
+        },
+        {
+          "name": "Navneet",
+          "Place": "Jalandhar"
+        }
+      ]
+    }
+  ]
+}

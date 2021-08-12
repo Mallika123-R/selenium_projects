@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-08T12:22:50Z" name="Default suite" finished-at="2021-08-08T12:23:00Z" duration-ms="9717">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.stepDefinition.TestRunner@15d3793b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-08-08T12:22:50Z" name="Default test" finished-at="2021-08-08T12:23:00Z" duration-ms="9717">
+      <class name="com.stepDefinition.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.stepDefinition.TestRunner@15d3793b]" started-at="2021-08-08T17:52:50Z" name="setUpClass" finished-at="2021-08-08T17:52:52Z" duration-ms="1635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.stepDefinition.TestRunner@15d3793b]" started-at="2021-08-08T17:52:52Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-08T17:53:00Z" duration-ms="7471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Title of your feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.stepDefinition.TestRunner@15d3793b]" started-at="2021-08-08T17:53:00Z" name="tearDownClass" finished-at="2021-08-08T17:53:00Z" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.stepDefinition.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

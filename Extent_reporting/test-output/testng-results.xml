@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1694" started-at="2021-05-06T07:33:30Z" finished-at="2021-05-06T07:33:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1694" started-at="2021-05-06T07:33:30Z" finished-at="2021-05-06T07:33:32Z">
+      <class name="Extent_Test.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:Extent_Test.LoginTest@64bfbc86]" name="init" is-config="true" duration-ms="616" started-at="2021-05-06T07:33:30Z" finished-at="2021-05-06T07:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Extent_Test.LoginTest@64bfbc86]" name="login" duration-ms="78" started-at="2021-05-06T07:33:31Z" finished-at="2021-05-06T07:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:Extent_Test.LoginTest@64bfbc86]" name="quit" is-config="true" duration-ms="969" started-at="2021-05-06T07:33:31Z" finished-at="2021-05-06T07:33:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- Extent_Test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

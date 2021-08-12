@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6077" started-at="2021-02-04T06:55:39Z" finished-at="2021-02-04T06:55:45Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="6077" started-at="2021-02-04T06:55:39Z" finished-at="2021-02-04T06:55:45Z">
+      <class name="suitb.TestB">
+        <test-method status="PASS" signature="testB()[pri:0, instance:suitb.TestB@3b81a1bc]" name="testB" duration-ms="3016" started-at="2021-02-04T06:55:39Z" finished-at="2021-02-04T06:55:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+      </class> <!-- suitb.TestB -->
+      <class name="suitb.TestBB">
+        <test-method status="PASS" signature="testBB()[pri:0, instance:suitb.TestBB@64616ca2]" name="testBB" duration-ms="3015" started-at="2021-02-04T06:55:42Z" finished-at="2021-02-04T06:55:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBB -->
+      </class> <!-- suitb.TestBB -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+  <suite name="Suite A" duration-ms="6077" started-at="2021-02-04T06:55:39Z" finished-at="2021-02-04T06:55:45Z">
+    <groups>
+    </groups>
+    <test name="Test A" duration-ms="6077" started-at="2021-02-04T06:55:39Z" finished-at="2021-02-04T06:55:45Z">
+      <class name="Suita.TestAA">
+        <test-method status="PASS" signature="testAA()[pri:0, instance:Suita.TestAA@2812cbfa]" name="testAA" duration-ms="3015" started-at="2021-02-04T06:55:42Z" finished-at="2021-02-04T06:55:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAA -->
+      </class> <!-- Suita.TestAA -->
+      <class name="Suita.TestA">
+        <test-method status="PASS" signature="testA()[pri:0, instance:Suita.TestA@2d6e8792]" name="testA" duration-ms="3016" started-at="2021-02-04T06:55:39Z" finished-at="2021-02-04T06:55:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+      </class> <!-- Suita.TestA -->
+    </test> <!-- Test A -->
+  </suite> <!-- Suite A -->
+</testng-results>

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 14.355 s <<< FAILURE! - in TestSuite
+suitea.TestA.testA  Time elapsed: 2.097 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	do not match
+	at suitea.TestA.testA(TestA.java:32)
+
+suitea.TestA.testA  Time elapsed: 2.031 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	do not match
+	at suitea.TestA.testA(TestA.java:32)
+

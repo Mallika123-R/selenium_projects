@@ -1,0 +1,32 @@
+package com.Reports;
+
+import java.io.IOException;
+import com.stepDefinition.BaseClass;
+import cucumber.api.Scenario;
+
+public class HooksClass extends BaseClass {
+	
+	
+	public static CustomExtentReporter customExtentReproter;
+	private static boolean isReporterRunning;
+	
+	
+	public void BeforeScenario() {
+		if (isReporterRunning) {
+			customExtentReproter = new CustomExtentReporter("C:\\Users\\Premc\\OneDrive\\Desktop\\Demo\\demo\\target\\Data\\Newreport.html");
+			isReporterRunning = true;
+			
+		}
+	}
+	private void AfterScenario(Scenario scenario) throws IOException {
+	     String screenShotFileName = "C:\\Users\\Premc\\OneDrive\\Desktop\\Demo\\demo\\target\\Data" + scenario.getName().replaceAll(" ", "")+".jpeg";
+		if (scenario.isFailed()) {
+		}
+		customExtentReproter.createTest(scenario, screenShotFileName);
+		if (driver != null) {
+			driver.quit();
+		}
+	}
+	
+	
+}

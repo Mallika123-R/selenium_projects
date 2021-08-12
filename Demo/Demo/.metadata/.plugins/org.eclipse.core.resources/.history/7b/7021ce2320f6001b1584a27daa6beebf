@@ -1,0 +1,48 @@
+package com.stepDefinition;
+
+import java.io.File;
+import java.io.IOException;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import cucumber.api.Scenario;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+public class Hooksclass {
+
+	private static Reports reports;
+	private static boolean isReporterRunning;
+
+	@Before
+	public void beforeScenario() {
+		if (isReporterRunning) {
+			reports = new Reports("C:\\Users\\Premc\\OneDrive\\Desktop");
+			isReporterRunning = true;
+
+		}
+
+	}
+
+	@After
+	public void afterscenario(Scenario scenario) throws Throwable {
+		String screenShotFileName = "C:\\Users\\Premc\\OneDrive\\Desktop" + scenario.getName().replaceAll(" ", "")
+				+ "jpeg";
+		if (scenario.isFailed()) {
+			captureScreenshot(screenShotFileName);
+		}
+		reports.createtest(scenario, screenShotFileName);
+		reports.writeToReport();
+		if (BaseClass.driver != null) {
+			BaseClass.driver.quit();
+		}
+	}
+
+	public static void captureScreenshot(String location) throws IOException {
+		TakesScreenshot scrShot = ((TakesScreenshot) BaseClass.driver);
+		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
+		File DestFile = new File(location);
+		FileUtils.copyFile(SrcFile, DestFile);
+
+	}
+
+}

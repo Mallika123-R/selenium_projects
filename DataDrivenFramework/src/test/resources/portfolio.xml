@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Portfolio Suite">
+<listeners>
+     <listener class-name="Listeners.Test_listener">
+     </listener>
+</listeners>
+  <test name="Create Portfolio Test">
+    <classes>
+      <class name="testcase.radiff.session">
+        <methods>
+           <include name="dologin"/>
+        </methods>
+        </class>
+      <class name="testcase.radiff.portfolio_mgmt">
+      <methods>
+           <include name="create_portfolio"/>
+        </methods>
+        </class>
+      <class name="testcase.radiff.Stock_mgmt">
+      <methods>
+           <include name="add_FreshStock"/>
+           <include name="verify_stockPresent"/>
+           
+        </methods>
+        </class>
+    </classes>
+  </test> <!-- Test -->
+  <!--  <test name="Delete Portfolio Test">
+    <classes>
+      <class name="testcase.radiff.session">
+        <methods>
+           <include name="dologout"/>
+        </methods>
+        </class>
+      <class name="testcase.radiff.portfolio_mgmt">
+      <methods>
+           <include name="Delete_portfolio"/>
+        </methods>
+        </class>
+      <class name="testcase.radiff.Stock_mgmt"/>
+    </classes>
+  </test>--> <!-- Test -->
+</suite> <!-- Suite -->

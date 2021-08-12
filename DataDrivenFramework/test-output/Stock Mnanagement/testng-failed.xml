@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Stock Mnanagement]">
+  <listeners>
+    <listener class-name="Listeners.Test_listener"/>
+  </listeners>
+  <test thread-count="5" name="Add New Stock Test(failed)">
+    <parameter name="action" value="addStock"/>
+    <classes>
+      <class name="testcase.radiff.Stock_mgmt">
+        <methods>
+          <include name="verifyStock_quantity" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="quit"/>
+          <include name="verifyTransactionHistory" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testcase.radiff.Stock_mgmt -->
+    </classes>
+  </test> <!-- Add New Stock Test(failed) -->
+  <test thread-count="5" name="ModifyStock Test(failed)">
+    <parameter name="action" value="sellsStock"/>
+    <classes>
+      <class name="testcase.radiff.Stock_mgmt">
+        <methods>
+          <include name="verifyStock_quantity" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="quit"/>
+          <include name="verifyTransactionHistory" invocation-numbers="0"/>
+          <include name="verify_stockPresent"/>
+        </methods>
+      </class> <!-- testcase.radiff.Stock_mgmt -->
+    </classes>
+  </test> <!-- ModifyStock Test(failed) -->
+</suite> <!-- Failed suite [Stock Mnanagement] -->

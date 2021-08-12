@@ -1,0 +1,4 @@
+Browser=chrome
+wait=5
+extent.reporter.spark.start=true
+extent.reporter.spark.out=test-output/SparkReport/Spark.html

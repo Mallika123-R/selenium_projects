@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48128" started-at="2021-04-20T14:58:21Z" finished-at="2021-04-20T14:59:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48128" started-at="2021-04-20T14:58:21Z" finished-at="2021-04-20T14:59:09Z">
+      <class name="window_mngmt.popup">
+        <test-method status="PASS" signature="window_mgmt()[pri:0, instance:window_mngmt.popup@31a5c39e]" name="window_mgmt" duration-ms="48074" started-at="2021-04-20T14:58:21Z" finished-at="2021-04-20T14:59:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- window_mgmt -->
+      </class> <!-- window_mngmt.popup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

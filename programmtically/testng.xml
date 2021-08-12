@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Booking Suite">
+  <test  name="Create booking Test-Apply discount-pay@Hotel">
+  <parameter name="action" value="pay@Hotel"></parameter>
+    <classes>
+    <class name="testcases.booking_search">
+       <methods>
+          <include name="searchHotel"/>
+          <include name="selectHotel"/>
+          <include name="GuestInfo"/>
+       </methods>
+     </class>
+      <class name="testcases.Payment_Info">
+         <methods>
+          <include name="apply_discount"/>
+          <include name="makepayment"/>
+       </methods>
+      </class>
+      <class name="testcases.coustmer_comm">
+       <methods>
+          <include name="check_mail"/>
+         
+       </methods>
+      </class>
+        
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Create booking Test-Apply discount-Instant Payment">
+  <parameter name="action" value="InstantPay"></parameter>
+    <classes>
+    <class name="testcases.booking_search">
+       <methods>
+          <include name="searchHotel"/>
+          <include name="selectHotel"/>
+          <include name="GuestInfo"/>
+       </methods>
+     </class>
+      <class name="testcases.Payment_Info">
+         <methods>
+          <include name="apply_discount"/>
+          <include name="makepayment"/>
+       </methods>
+      </class>
+      <class name="testcases.coustmer_comm">
+       <methods>
+          <include name="check_mail"/>
+         
+       </methods>
+      </class>
+        
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

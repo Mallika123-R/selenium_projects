@@ -1,0 +1,18 @@
+package com.stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseClass {
+	
+	
+	
+private void launchBrowser() {
+	System.setProperty("Webdriver.chrome.driver", "C:\\Users\\Premc\\OneDrive\\Desktop\\Demo\\demo\\src\\test\\resources\\chromedriver.exe");
+	WebDriver driver = new ChromeDriver();	
+
+}
+	
+	
+}
+

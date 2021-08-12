@@ -1,0 +1,83 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-08T13:43:51.931Z",
+        "line": 4,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5248203900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the Browser and the URL",
+            "match": {
+              "location": "com.stepDefinition.LoginPage.user_launch_the_browser_and_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 243348500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enter the user name",
+            "match": {
+              "location": "com.stepDefinition.LoginPage.user_enter_the_user_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259306300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Enter the password",
+            "match": {
+              "location": "com.stepDefinition.LoginPage.user_enter_the_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 675192900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click the login button",
+            "match": {
+              "location": "com.stepDefinition.LoginPage.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@RC_123"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/first.feature",
+    "tags": []
+  }
+]

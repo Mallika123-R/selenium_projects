@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="518" started-at="2021-05-09T11:41:22Z" finished-at="2021-05-09T11:41:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="518" started-at="2021-05-09T11:41:22Z" finished-at="2021-05-09T11:41:23Z">
+      <class name="JDBC">
+        <test-method status="PASS" signature="DBTest()[pri:0, instance:JDBC@589838eb]" name="DBTest" is-config="true" duration-ms="452" started-at="2021-05-09T11:41:22Z" finished-at="2021-05-09T11:41:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DBTest -->
+        <test-method status="PASS" signature="testDB()[pri:0, instance:JDBC@589838eb]" name="testDB" duration-ms="34" started-at="2021-05-09T11:41:23Z" finished-at="2021-05-09T11:41:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDB -->
+        <test-method status="PASS" signature="disconnect()[pri:0, instance:JDBC@589838eb]" name="disconnect" is-config="true" duration-ms="1" started-at="2021-05-09T11:41:23Z" finished-at="2021-05-09T11:41:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnect -->
+      </class> <!-- JDBC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

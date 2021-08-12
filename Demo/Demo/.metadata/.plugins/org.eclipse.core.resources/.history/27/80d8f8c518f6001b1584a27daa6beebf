@@ -1,0 +1,60 @@
+package com.stepDefinition;
+
+import java.io.File;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import cucumber.api.Scenario;
+import com.stepDefinition.Status;
+
+
+
+
+public class Reports {
+
+	
+	private ExtentHtmlReporter extentHtmlReporter;
+	private ExtentReports extentReports;
+	
+	public Reports(String location) {
+		extentHtmlReporter = new ExtentHtmlReporter(new File(location));
+		extentReports =new ExtentReports();
+		extentReports.attachReporter(extentHtmlReporter);}
+	
+	public void createtest(Scenario scenario ,String scrLocation) {
+	     String testName = getsecnarioTitle(scenario);
+		  if (scenario !=null) {
+			  
+			  switch (scenario.getStatus()) {
+			case PASSED:
+				extentReports.createTest(testName).pass("passed");
+				break;
+				
+			case FAILED:
+				extentReports.createTest(testName).pass("failed").addScreenCaptureFromPath(imagepath); 
+				break; 
+
+			default:
+				extentReports.createTest(testName).skip("Skipped");
+			}
+			
+		}
+
+	}
+	  
+	  public void writeToReport() {
+		if (extentReports !=null) {
+			extentReports.flush();
+		}
+
+	}
+	  
+	  public String getscreenShotLocation(String alocation) {
+		return "file:///"+alocation.replaceAll("\\", "//");
+
+	}
+	  
+	  public String getsecnarioTitle(Scenario scenario) {
+		return scenario.getName().replaceAll(" ", "");
+
+	}
+}
